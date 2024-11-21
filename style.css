@@ -3,16 +3,6 @@
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/*form button {
-    /* ... existant ... *
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-form button:hover {
-    /* ... existant ... *
-    transform: scale(1.05);
-}
-*/
 /* Variables de Couleurs */
 :root {
     --primary-color: #2c3e50;
@@ -20,6 +10,8 @@ form button:hover {
     --light-color: #ecf0f1;
     --dark-color: #34495e;
     --accent-color: #e74c3c;
+    --diff-color:  #e1e7ea ;
+    --black-color:  #2c2d2d;
 }
 
 /* Typographie */
@@ -27,10 +19,9 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--light-color);
-    color: var(--dark-color);
+    background-color: var(--diff-color);
+    color: var(--black-color);
     line-height: 1.6;
-    /*font-family: 'Manrope', sans-serif;*/
     font-size: 1em;
 }
 
@@ -108,7 +99,7 @@ h2 {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    /*border-radius: 50%;*/
+    border-radius: 50%;
     border: 5px solid var(--secondary-color);
     transition: transform 0.3s ease;
 }
@@ -230,10 +221,10 @@ footer {
     background-color: var(--light-color);
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 300px;
+    width: auto;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -273,7 +264,6 @@ footer {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    
 }
 
 body::before {
@@ -361,7 +351,7 @@ body::before {
     line-height: 1.5;
 }
 
-/*par moi*/
+/*-----------------------------------------par moi-----------------------------------------*/
 #openPopupBtn {
     padding: 10px 20px;
     font-size: 16px;
@@ -411,24 +401,35 @@ body::before {
 .paragraphe-accueil {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 85%;
     align-items: flex-start;
     margin: auto;
 }
 
+.paragraphe-accueil-txt {
+    text-align: justify;
+}
+
+.paragraphe-about-etudes {
+    text-align: center;
+} 
+
+.about-h4 {
+    text-align: center;
+}
 /*vidéo */
 .video-container {
     text-align: center;
-    max-width: 1920px;/*640px;*/
+    max-width: 640px;
     margin: auto;
 }
   
 video {
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-  
+/*  
 .controls {
     margin-top: 10px;
   }
@@ -446,4 +447,57 @@ button {
   
   button:hover {
     background-color: #0056b3;
+}*/
+.form-item-container {
+    /* margin-bottom: 15px; */
+    /* text-align: left; */
+
+    display: flex;
+    gap: 20px; /* Espace entre les paragraphes */
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Espace entre les paragraphes */
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    flex: 1; /* Chaque paragraphe prend une part égale de l'espace disponible */
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph:nth-child(1) {
+    background-color: #e9f7ef; /* Paragraphe gauche en vert clair */
+}
+
+.paragraph:nth-child(2) {
+    background-color: #fbeee6; /* Paragraphe droit en orange clair */
+}
+
+/*-----------------------------------------PDF-----------------------------------------*/
+.cv {
+    /* align-content: center; */
+    text-align: center;
+}
+a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+a:hover {
+background-color: #0056b3;
 }
