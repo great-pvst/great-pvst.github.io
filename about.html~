@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de moi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> À propos de moi</a></li>
+                <li><a href="competences.html"><i class="fas fa-project-diagram"></i> Compétences</a></li>
+                <li><a href="#to-contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>À propos de moi</h1>
+            <div class="form-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Études</h3>
+                <div class="paragraphe-about-etudes">
+                    <h4 class="about-h4">
+                        BUT Réseaux & Télécoms - IUT Nord Franche-Comté 2022-2025
+                    </h4>
+                    <p>
+                        Le BUT R&T forme en trois ans des professionnels en réseaux et télécommunications, cadres intermédiaires de leur organisation, capables de comprendre, 
+                        de mettre en œuvre, de configurer et de maintenir des équipements et systèmes d’informations, tout en assurant leur sécurité physique et logicielle.
+                    </p>
+                    <h4 class="about-h4">
+                        Bac général, spécialité SVT & Physique-Chimie 2021
+                    </h4>
+                </div>
+            </div>
+
+            <i class="fas fa-laptop-code"></i>
+            <h3>Compétences</h3>
+            <div class="form-item-container">    
+                <div class="container">
+                    <div class="paragraph">
+                        <h4>Hardskills</h4>
+                        <h5>
+                            <ul>
+                                <li>Langages informatiques<br>Essentiellement du scripting (Bash, C, Python)</li>
+                                <li>Administrer les réseaux et l'Internet : Debian, Windows Server, Routage, services réseaux</li>
+                                <li>Gestion des équipements et sytèmes de communications : ToIP, Asterisk, CME, PABX</li>
+                                <li>Sécuriser et surveiller : ACL, Filtrage, IDS/IPS </li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    <div class="paragraph">
+                        <h4>Softskills</h4>
+                        <h5>
+                            <ul>
+                                <li>Optimisme</li>
+                                <li>Rigueur</li>
+                                <li>Polyvalence</li>
+                                <li>Travail d'équipe</li>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cv">
+                <h2>Mon CV</h2>
+                <div style="position: relative; width: 100%; height: 600px;">
+                    <iframe src="ardy_ockandji_cv.pdf" width="100%" height="600px" style="border: none;"></iframe>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Ardy OCKANDJI, BUT3 R&T]. Tous droits réservés.</p>
+    </footer> 
+</body>
+</html>
